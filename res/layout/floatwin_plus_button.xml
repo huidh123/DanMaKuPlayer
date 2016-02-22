@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content" >
+    <ImageButton
+        android:id="@+id/btn_menu_open"
+        android:layout_height="40dp"
+        android:background="@drawable/float_button"
+        android:layout_width="40dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/ll_menu"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="100dp"
+        android:layout_toRightOf="@+id/btn_menu_open">
+        <TextView
+            android:id="@+id/tv_open_close_plugs" 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:background="@drawable/selector_menu_item"
+            android:text="隐藏弹幕插件"/>
+        <TextView
+            android:id="@+id/tv_plugs_time_setting" 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:background="@drawable/selector_menu_item"
+            android:textColor="#000000"
+            android:text="插件时间重置"/>
+        <TextView 
+            android:id="@+id/tv_danmaku_setting"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+             android:background="@drawable/selector_menu_item"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:text="弹幕播放设置"/>
+        
+        <TextView 
+            android:id="@+id/tv_playing_status"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_menu_item"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:text="未开始播放"/>
+        
+         <TextView 
+            android:id="@+id/tv_play_time"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_menu_item"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:text="未开始播放视频"/>
+    </LinearLayout>
+</RelativeLayout>
